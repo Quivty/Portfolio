@@ -159,6 +159,7 @@ footer>img{
     height:100px;
 }
 
+
 .headlinks{
     display:grid;
     grid-auto-flow: column;
@@ -166,9 +167,21 @@ footer>img{
     gap: 50%;
 }
 
-.headlinks>img{
+.headlinks>a{
+    display: block;
+}
+
+.headlinks>a>img{
+    transition: 0.3s;
     height: 75px;
 }
+
+.headlinks>a>img:hover{
+    transform: scale(1.1);
+}
+
+
+
 
 footer>a{
     padding: 2rem;

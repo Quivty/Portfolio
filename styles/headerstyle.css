@@ -1,0 +1,69 @@
+header{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.hstart{
+    color: #b9b9b9;
+    display: block;
+    padding-left: 20px;
+}
+
+h1{
+    color: #6eff5b;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.quotetext{
+    color: #b9b9b9;
+    font-style: italic;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+
+.quotetext:hover{
+    font-size: 1.4rem;
+    color: #d7d7d7
+}
+
+.quotetext:before{
+    content: '"';
+    color:#6eff5b;
+    font-size: 1.4rem;
+}
+
+.quotetext:after{
+    content: '"';
+    color:#6eff5b; 
+    font-size: 1.4rem;
+}
+
+.quotename{
+    color: #9b9b9b;
+    padding-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.quotename:hover{
+    text-decoration: underline;
+}
+
+.quotename:before{
+    content: "~";
+    color: #6eff5b;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 950px){
+
+    header{
+        padding: 5vw;
+    }
+    
+    h1{
+        font-size: 4rem;
+    }
+}

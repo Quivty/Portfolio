@@ -220,10 +220,14 @@ footer>a>img{
 /*about*/
 
 .sociallinks{
-
+    padding: 5vh;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 20%;
 }
 
-.sociallinks>img{
+.sociallinks>a>img{
     width: 100px;
 }
 

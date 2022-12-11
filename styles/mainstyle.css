@@ -23,7 +23,11 @@ a{
     text-decoration: none;
 }
 
-
+main>h1{
+    text-align: center;
+    color: #6eff5b;
+    padding: 2rem;
+}
 
 nav{
     background:#222222;
@@ -47,6 +51,10 @@ nav{
     top: 0;
 }
 
+.othernav{
+    position: sticky;
+}
+
 .navlinks{
     justify-self: center;
     display: grid;
@@ -58,7 +66,6 @@ nav{
     padding-left: 5vw;
     grid-column: 1;
 }
-
 nav>img{
     height: 50px;
     display:block;
@@ -73,6 +80,7 @@ nav>img{
 
 .navlinks>a:hover{
     transform: scale(1.2);
+    
 }
 
 .numbers{
@@ -207,6 +215,16 @@ footer>a>img{
 
 ::-webkit-scrollbar-thumb:hover{
     background:#6eff5b;
+}
+
+/*about*/
+
+.sociallinks{
+
+}
+
+.sociallinks>img{
+    width: 100px;
 }
 
 @media only screen and (max-width: 950px){

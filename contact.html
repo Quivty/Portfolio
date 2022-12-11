@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/mainstyle.css">
+    <link rel="stylesheet" href="styles/contactstyle.css">
+    <link rel="icon" href="icons/fb.png">
+    <title>F.B | Contact</title>
+</head>
+<body>
+    <nav id="navid" class="show othernav">
+        <div class="navlinks">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <img src="icons/fb.png">
+    </nav>
+    <main>
+        <h1>Contact me!</h1>
+        <section class="kontakt">
+            <form action="send.php" accept-charset="ISO-8859-1" method="post" spellcheck="false">
+                <input type="text" class="contactinput" name="imie" placeholder="Name" required="required">
+                <input type="text" class="contactinput" name="nazwisko" placeholder="Last name" required="required">
+                <input type="email" class="contactinput" name="email" placeholder="Email" required="required">
+                <input type="text" class="contactinput" name="numertel" placeholder="Phone number(XXX XXX XXX)" pattern="[0-9]{3} [0-9]{3} [0-9]{3}">
+                <input type="temat" class="contactsubject" name="temat" placeholder="Subject" required="required">
+                <textarea name="message" class="contactmessage" placeholder="Write your message" required="required" rows="5" cols="80"></textarea>
+                <input type="reset" value="Anuluj">
+                <input type="submit" value="Wyślij!" name="submit">
+            </form>
+            <section class="contactinfo">
+                <div class="infodiv"><img src="icons/mail.png"><span><span>frankbork07</span>@gmail.com</span></div>
+                <div class="infodiv"><img src="icons/phone.png"><span><span>+48</span> 693 093 008</span></div>
+                <div class="infodiv"><img src="icons/location.png"><span><span>Gliwice</span>, Poland</span></div>
+                
+            </section>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="icons/bigfb.png">
+        <span class="break"></span>
+        <div class="headlinks">
+            <a href="https://github.com/Quivty"><img src="icons/github-sign.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/franek-borkowski/"><img src="icons/linkedin-logo.png" alt="linkedin"></a>
+        </div>
+        <a href="fbork.pl">Made by <img src="icons/fb.png"></a>
+</footer>
+    
+</body>
+</html>

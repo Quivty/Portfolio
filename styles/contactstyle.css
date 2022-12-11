@@ -1,0 +1,127 @@
+html{
+    font-size: 18px;
+}
+
+.kontakt{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10vh;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "i n"
+    "e nt"
+    "t t"
+    "m m"
+    "r w";
+    gap: 20px;
+}
+
+form>*{
+    padding: 15px;
+    background-color: transparent;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #c8c8c8;
+    transition: 0.5s;
+    color: white;
+}
+
+form>*:focus{
+   outline: none;
+   caret-color: white;
+   border-bottom: 2px solid #6eff5b;
+   transition: 0.8s;
+}
+
+form>*::placeholder{
+    opacity: 0.8;
+    color:#6eff5b;
+}
+
+input[required="required"]:after{
+    content:"*";
+    color: red;
+}
+
+input[name="imie"]{grid-area: i;}
+input[name="nawisko"]{grid-area: n;}
+input[name="email"]{grid-area: e;}
+input[name="numertel"]{grid-area: nt;}
+input[name="temat"]{grid-area: t;}
+textarea[name="message"]{grid-area: m;}
+input[type="reset"]{grid-area: r;}
+input[type="submit"]{grid-area: w;}
+
+input[type="reset"],input[type="submit"]{
+        text-align: center;
+        color:#000;
+        background-color: #6eff5b;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 30px;
+        transition: 0.2s;
+        width: 70%;
+        justify-self: center;
+        font-family: 'Jost';
+        font-weight: 500;
+    }
+
+input[type="reset"]:hover,input[type="submit"]:hover{
+    background-color:#6eff5b;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000;
+}
+form{
+    justify-self: center;
+}
+
+.sendheader{
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+
+.send{
+    display:grid;
+    gap: 10px;
+}
+.sendimg{
+    justify-self: center;
+    height: 200px;
+}
+
+.contactinfo{
+    display: grid;
+    align-content: center;
+    gap: 20%;
+    margin-left: 5vw;
+}
+
+.infodiv{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    gap: 1vw;
+    width: fit-content;
+}
+
+.infodiv>img{
+    display:inline-block;
+    width: 1.8rem;
+}
+
+.infodiv>span{
+    display: block;
+}
+
+.infodiv>span>span{
+    color: #84ff74;
+}

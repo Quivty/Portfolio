@@ -56,22 +56,26 @@ nav{
 }
 
 .navlinks{
-    justify-self: center;
+    justify-self: start;
     display: grid;
     grid-auto-flow:column;
-    gap: 50%;
+    gap: 30%;
     color:#2a2a2a;
     font-size: 1.2rem;
     white-space: nowrap;
     padding-left: 5vw;
     grid-column: 1;
 }
-nav>img{
-    height: 50px;
+
+nav>a{
     display:block;
     padding: 20px;
     justify-self: center;
     grid-column: 2;
+}
+
+nav>a>img{
+    height: 50px;
 }
 
 .navlinks>a{
@@ -167,6 +171,14 @@ footer>img{
     height:100px;
 }
 
+footer>a{
+    padding: 2rem;
+    color:#8a8a8a;
+}
+
+footer>a>img{
+    height: 1rem;
+}
 
 .headlinks{
     display:grid;
@@ -189,17 +201,6 @@ footer>img{
 }
 
 
-
-
-footer>a{
-    padding: 2rem;
-    color:#8a8a8a;
-}
-
-footer>a>img{
-    height: 1rem;
-}
-
 ::-webkit-scrollbar{
     width: 5px;
     background-color: #8a8a8a;
@@ -217,19 +218,7 @@ footer>a>img{
     background:#6eff5b;
 }
 
-/*about*/
 
-.sociallinks{
-    padding: 5vh;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
-    gap: 20%;
-}
-
-.sociallinks>a>img{
-    width: 100px;
-}
 
 @media only screen and (max-width: 950px){
 
@@ -241,15 +230,23 @@ footer>a>img{
         width: 50%;
     }
 
+    main{
+        height: fit-content;
+    }
+
     .navlinks{
         justify-self: start;
         gap: 15%;
     }
     
-    nav>img{
-        height: 30px;
+    nav>a{
         justify-self: end;
-        padding-right: 10vw
+        padding-right: 10vw;
+    }
+
+    nav>a>img{
+        height: 30px;
+
     }
 
     .numbers{
@@ -275,5 +272,27 @@ footer>a>img{
 
     .abpar{
         padding: 0 20%;
+    }
+
+    footer{
+        height: 40vh;
+        background: #222222;
+        padding-top: 10vh;
+        display: grid;
+        align-content: start;
+        justify-items: center;
+    }
+    
+    footer>.break{
+        width: 80%;
+        margin: 2vh;
+    }
+    
+    footer>img{
+        height:60px;
+    }
+
+    .headlinks>a>img{
+        height: 40px;
     }
 }

@@ -51,9 +51,15 @@
         grid-template-columns: 1fr;
         gap: 10%;
         margin: 10vh 0;
+        padding: 2vw;
+        height: fit-content;
     }
 
     .project>img{
-        height: 35vw;
+        height: 45vw;
+    }
+
+    .sociallinks>a>img{
+        width: 60px;
     }
 }

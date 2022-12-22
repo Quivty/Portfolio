@@ -23,6 +23,10 @@ a{
     text-decoration: none;
 }
 
+main{
+    height: fit-content;
+}
+
 main>h1{
     text-align: center;
     color: #6eff5b;
@@ -271,7 +275,7 @@ footer>a>img{
     }
 
     .abpar{
-        padding: 0 20%;
+        padding: 0 10%;
     }
 
     footer{

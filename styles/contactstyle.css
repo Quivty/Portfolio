@@ -5,7 +5,6 @@ html{
 .kontakt{
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr;
     margin-bottom: 10vh;
 }
 
@@ -43,6 +42,7 @@ form>*:focus{
 form>*::placeholder{
     opacity: 0.8;
     color:#6eff5b;
+    font-size: 1rem;
 }
 
 input[required="required"]:after{
@@ -79,6 +79,7 @@ input[type="reset"]:hover,input[type="submit"]:hover{
     cursor: pointer;
     box-shadow: 2px 2px 3px #000;
 }
+
 form{
     justify-self: center;
 }
@@ -124,4 +125,60 @@ form{
 
 .infodiv>span>span{
     color: #84ff74;
+}
+
+@media only screen and (max-width: 1170px){
+    .kontakt{
+        display: grid;
+        grid-auto-flow: row;
+        margin-bottom: 10vh;
+        gap: 10%;
+    }
+
+    form{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "i"
+        "n"
+        "e"
+        "nt"
+        "t"
+        "m"
+        "r"
+        "w";
+        gap: 20px;
+        padding: 1vw;
+    }
+
+    form>*{
+        width: 80%;
+        justify-self: center;
+    }
+
+    .sendheader{
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .send{
+        display:grid;
+        gap: 10px;
+    }
+    .sendimg{
+        justify-self: center;
+        height: 100px;
+    }
+    .contactheader{
+        text-align: center;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .contactinfo{
+        gap: 5vw;
+    }
+
+    input[type="reset"],input[type="submit"]{width: 40vw;}
+    
 }

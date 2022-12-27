@@ -21,11 +21,11 @@ function updateHours(){
     let start = new Date(2022,10,10,18); 
     let now = new Date();
     let between = now.getTime() - start.getTime();
-    let add = Math.floor(between/(1000*60*60*24))/2;
+    let add = Math.floor(between/(1000*60*60*18))/2;
     hours=hours+add;
     hourcontainer=document.querySelector(".hours");
     hourcontainer.innerHTML=hours+" hours";
-    setTimeout(updateHours,1000*60*60*24);
+    setTimeout(updateHours,1000*60*60*18);
 }
 updateHours();
 
@@ -36,11 +36,11 @@ function updateLines(){
     let start = new Date(2022,10,10,18); 
     let now = new Date();
     let between = now.getTime() - start.getTime();
-    let add = Math.floor(between/(1000*60*60*3))
+    let add = Math.floor(between/(1000*60*60*1))
     lines=lines+add;
     linecontainer=document.querySelector(".lines");
     linecontainer.innerHTML=lines+" lines<br>of code";
-    setTimeout(updateLines,1000*60*60*3);
+    setTimeout(updateLines,1000*60*60*1);
 }
 updateLines();
 
